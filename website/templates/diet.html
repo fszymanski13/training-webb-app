@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% block title %}personal{% endblock %}
+
+{% block content %}
+<h3 align="center" class="my-4">Daily diet</h3>
+<div class="row">
+<form method="POST">
+        <div class="col-10">
+            <div class="row">
+                    <label for="date">Date</label>
+                    <input type="text" class="form-control" id="date" name="date" placeholder="Today's date" />
+                <div class="col-lg-10"></div>
+            </div>
+            <br />
+            <div class="row">
+                    <label for="calories">Calories</label>
+                    <input type="text" class="form-control" id="calories" name="calories"
+                        placeholder="Fill in calories eaten today" />
+                <div class="col-lg-10"></div>
+            </div>
+            <br />
+            <div class="row">
+                    <label for="proteins">Proteins</label>
+                    <input type="text" class="form-control" id="proteins" name="proteins"
+                        placeholder="Fill in proteins eaten today" />
+                <div class="col-lg-10"></div>
+            </div>
+            <br />
+            <div class="row">
+                    <label for="carbohydrates">Carbohydrates</label>
+                    <input type="text" class="form-control" id="carbohydrates" name="carbohydrates"
+                        placeholder="Fill in carbohydrates eaten today" />
+                <div class="col-lg-10"></div>
+            </div>
+            <br />
+            <div class="row">
+                    <label for="fats">Fats</label>
+                    <input type="text" class="form-control" id="fats" name="fats"
+                        placeholder="Fill in fats eaten today" />
+                <div class="col-lg-10"></div>
+            </div>
+            <br />
+            <div class="row">
+                    <label for="liquids">Liquids</label>
+                    <input type="text" class="form-control" id="liquids" name="liquids"
+                        placeholder="Fill in liquids drunk today" />
+                <div class="col-lg-10"></div>
+            </div>
+            <br />
+            <div class="row">
+                    <label for="notes">Notes</label>
+                    <input type="text" class="form-control" id="notes" name="notes" placeholder="Add notes" />
+                <div class="col-lg-10">
+                    <br />
+                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                </div>
+            </div>
+</form>
+</div>
+<div class="col-6">
+        <div class="card card-style mb-2">
+            <div class="card-body">
+                <div class="chart-container" style="position: relative;">
+                    <canvas id="Macronutrients"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br />
+    <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Calories</th>
+            <th scope="col">Proteins</th>
+            <th scope="col">Carbohydrates</th>
+            <th scope="col">Fats</th>
+            <th scope="col">Liquids</th>
+            <th scope="col">Notes</th>
+        </tr>
+    </thead>
+         {% for row in diet_all %}
+         <tr>
+             <td>{{ row[1] }}</td>
+             <td>{{ row[2] }}</td>
+             <td>{{ row[3] }}</td>
+             <td>{{ row[4] }}</td>
+             <td>{{ row[5] }}</td>
+             <td>{{ row[6] }}</td>
+             <td>{{ row[7] }}</td>
+         </tr>
+         {% endfor %}
+
+</table>
+{% block javascript %}
+
+<script>
+
+    let Macronutrients_chart = new Chart(Macronutrients, {
+        type: 'pie',
+        data: {
+            labels: ['Protein', 'Fat', 'Carbohydrates'],
+            datasets: [{
+                label: "Macronutrients",
+                data: ["{{ proteins }}", "{{ fats }}", "{{ carbohydrates }}"],
+                backgroundColor: ['#5DA5DA ', '#FAA43A', '#60BD68',
+                    '#B276B2', '#E16851', '#FB8267'],
+
+                borderWidth: 1,
+                hoverBorderColor: "black",
+                hoverBorderWidth: 2,
+                hoverBackgroundColor: 'rgb(140,233,245)',
+                pointHoverRadius: 5
+            }],
+        },
+        options: {
+            title: {
+                display: true,
+                text: "Macronutrients",
+                fontSize: 30,
+            },
+            legend: {
+                position: "right",
+                labels: {
+                    fontColor: "black"
+                },
+                display: true,
+            },
+
+            elements: {
+                hitRadius: 3,
+            }
+        }
+    });
+</script>
+
+
+{% endblock %}
+{% endblock %}
