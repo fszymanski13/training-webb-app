@@ -14,3 +14,9 @@ Web application designed to monitor training and diet progress. Allows to set go
 - hashlib
 
 Project was developed using Python 3.10
+
+### Installation
+To run the app, follow the following steps:
+1.Download the zip file 'TrainingWebApp.zip'
+2.Run the file 'server.ipynb'
+3.Open your browser and go to http://localhost:5000
