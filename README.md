@@ -15,8 +15,14 @@ Web application designed to monitor training and diet progress. Allows to set go
 
 Project was developed using Python 3.10
 
-### Installation
-To run the app, follow the following steps:
-1.Download the zip file 'TrainingWebApp.zip'
-2.Run the file 'server.ipynb'
-3.Open your browser and go to http://localhost:5000
+### Configuration
+
+In order to acess the app follow the following steps:
+
+1. Download the zip file 'TrainingWebApp' and unzip it on your disk
+
+2. Change the project directory into ProjectPython folder
+
+3. Open and run the file 'main.py'
+
+4. Open your browser and go to http://127.0.0.1:5000
