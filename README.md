@@ -1,5 +1,5 @@
 # Training Webb App
-Web application designed to monitor training and diet progress. Allows to set goals, calculate daily calorie consumption and monitor progress.'
+Web application designed to monitor training and diet progress. Allows to set goals, calculate daily calorie consumption and monitor progress.
 ### Features
 - Calculate user's daily calorie consumption based on the personal data and set up goal
 - Store the data about daily training and diet
