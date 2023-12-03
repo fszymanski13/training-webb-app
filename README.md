@@ -1,28 +1,28 @@
-# Training Webb App
-Web application designed to monitor training and diet progress. Allows to set goals, calculate daily calorie consumption and monitor progress.
-### Features
-- Calculate user's daily calorie consumption based on the personal data and set up goal
-- Store the data about daily training and diet
-- Interactive plots concerning daily distribution of macronutitients
-### Packages used
-- Flask 2.2.2
-- Flask-Login 0.6.2
-- Flask-Session 0.4.0
-- Jinja2 3.1.2
-- Werkzeug 2.2.2
-- sqlite3
-- hashlib
+Training Webb App
+Overview
+The Training Webb App is a comprehensive web application designed to assist users in tracking and managing their fitness and dietary goals. It offers personalized features to calculate daily calorie consumption, monitor training and dietary habits, and visualize progress through interactive plots.
 
-Project was developed using Python 3.10
+Key Features
+Calorie Consumption Calculation: Personalized calculation of daily calorie intake based on user's individual data and fitness goals.
+Data Tracking: Ability to store and manage data related to daily training routines and diet.
+Nutrition Analysis: Interactive plots to visualize the daily distribution of macronutrients, aiding in dietary planning.
+Technical Stack
+Backend Framework: Flask 2.2.2
+User Authentication: Flask-Login 0.6.2
+Session Management: Flask-Session 0.4.0
+Template Engine: Jinja2 3.1.2
+Utility Library: Werkzeug 2.2.2
+Database: sqlite3
+Security: hashlib
+Developed in Python 3.10.
 
-### Configuration
-
-In order to acess the app follow the following steps:
-
-1. Download the zip file 'TrainingWebApp' and unzip it on your disk
-
-2. Change the project directory into ProjectPython folder
-
-3. Open and run the file 'main.py'
-
-4. Open your browser and go to http://127.0.0.1:5000
+Getting Started
+Prerequisites
+Python 3.10
+Flask and associated dependencies (listed above)
+Installation and Setup
+Download Repository: Clone or download the 'TrainingWebApp' repository from GitHub.
+Project Setup: Extract the content and navigate to the ProjectPython folder.
+Run Application: Execute the main.py file to start the server.
+Access Application: Open a web browser and go to http://127.0.0.1:5000 to access the application.
+This version of the README file presents the information in a structured and professional manner, suitable for a GitHub repository.
