@@ -29,4 +29,3 @@ Developed in Python 3.10.
 1. **Download Repository**: Clone or download the 'TrainingWebApp' repository from GitHub.
 2. **Project Setup**: Extract the content and navigate to the `ProjectPython` folder.
 3. **Run Application**: Execute the `main.py` file to start the server.
-4. **Access Application**: Open a web browser and go to `http://127.0.0.1:5000` to access the application.
