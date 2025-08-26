@@ -1,7 +1,7 @@
-# Training Webb App
+# Training Web App
 
 ## Overview
-The Training Webb App is a comprehensive web application designed to assist users in tracking and managing their fitness and dietary goals. It offers personalized features to calculate daily calorie consumption, monitor training and dietary habits, and visualize progress through interactive plots.
+The Training Web App is a comprehensive web application designed to assist users in tracking and managing their fitness and dietary goals. It offers personalized features to calculate daily calorie consumption, monitor training and dietary habits, and visualize progress through interactive plots.
 
 ## Key Features
 - **Calorie Consumption Calculation**: Personalized calculation of daily calorie intake based on user's individual data and fitness goals.
